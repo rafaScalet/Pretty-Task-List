@@ -1,10 +1,19 @@
 import { registerRootComponent } from 'expo'
-import { Login } from '@screens'
+import { Login, Home } from '@screens'
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 registerRootComponent(App)
 
 export default function App() {
+	const Drawer = createDrawerNavigator();
+
 	return (
-		<Login></Login>
+		<NavigationContainer>
+			<Drawer.Navigator initialRouteName='Login'>
+				<Drawer.Screen name='Login' component={Login}/>
+				<Drawer.Screen name='Home' component={Home}/>
+			</Drawer.Navigator>
+		</NavigationContainer>
   );
 };
