@@ -1,6 +1,6 @@
 import { Text, TextInput, SafeAreaView, Pressable, Image } from 'react-native';
 import { styles } from '../Style';
-import { handleSigIn } from './../functions';
+import { handleSigIn, handleCreateAccount } from './../functions';
 import { useState } from 'react';
 
 export function Login() {
@@ -16,7 +16,7 @@ export function Login() {
       <Pressable style={styles.button} onPress={() => handleSigIn(email, password)}>
         <Text style={styles.textButton}>Log-in</Text>
       </Pressable>
-      <Pressable>
+      <Pressable onPress={() => handleCreateAccount(email, password)}>
         <Text>Create an Account</Text>
       </Pressable>
     </SafeAreaView>
