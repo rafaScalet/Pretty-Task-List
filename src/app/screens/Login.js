@@ -1,6 +1,6 @@
 import { Text, TextInput, SafeAreaView, Pressable, Image } from 'react-native';
-import { styles } from '../Style';
-import { handleSigIn, handleCreateAccount } from './../functions';
+import { styles } from '@app/Style';
+import { handleSigIn, handleCreateAccount } from '@functions';
 import { useState } from 'react';
 
 export function Login() {

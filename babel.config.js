@@ -17,7 +17,7 @@ module.exports = function (api) {
           alias: {
             '@screens': './src/app/screens',
             '@functions': './src/app/functions',
-            '@app': './src/app',
+            '@app': './src/app/',
           },
         },
       ],
