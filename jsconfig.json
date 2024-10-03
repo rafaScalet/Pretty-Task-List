@@ -7,6 +7,7 @@
       "@screens": ["src/app/screens"],
       "@functions": ["src/app/functions"],
       "@components": ["src/app/components"],
+			"@styles": ["src/app/styles"],
       "@app/*": ["src/app/*"],
     }
   },

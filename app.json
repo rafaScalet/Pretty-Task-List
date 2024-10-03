@@ -4,10 +4,10 @@
     "slug": "Pretty-Task-List",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/app/Assets/icon.png",
+    "icon": "./src/app/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./src/app/Assets/splash.png",
+      "image": "./src/app/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,12 +16,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/app/Assets/adaptive-icon.png",
+        "foregroundImage": "./src/app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./src/app/Assets/favicon.png"
+      "favicon": "./src/app/assets/favicon.png"
     }
   }
 }
