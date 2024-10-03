@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@screens": ["src/app/screens"],
+      "@functions": ["src/app/functions"],
+      "@components": ["src/app/components"],
+      "@app/*": ["src/app/*"],
+    }
+  },
+  "include": ["src/**/*"]
+}
