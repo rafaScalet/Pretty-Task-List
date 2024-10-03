@@ -10,6 +10,17 @@ module.exports = function (api) {
           path: '.env',
         },
       ],
+      [
+        'module-resolver',
+        {
+          root: ['./src'],
+          alias: {
+            '@screens': './src/app/screens',
+            '@functions': './src/app/functions',
+            '@app': './src/app',
+          },
+        },
+      ],
     ],
   };
 };

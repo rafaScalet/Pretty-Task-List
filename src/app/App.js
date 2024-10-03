@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo'
-import { Login } from './screens'
+import { Login } from '@screens'
 
 registerRootComponent(App)
 
