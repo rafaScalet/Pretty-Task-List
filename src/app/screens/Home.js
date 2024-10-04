@@ -1,12 +1,15 @@
-import { Task } from '@components'
-import { SafeAreaView } from 'react-native';
+import { AddButton, Task } from '@components'
+import { SafeAreaView, ScrollView } from 'react-native';
 
 export function Home ({ navigation }) {
 	return (
-		<SafeAreaView>
-			<Task/>
-			<Task/>
-			<Task/>
+		<SafeAreaView style={{flex: 1}}>
+			<ScrollView>
+				<Task/>
+				<Task/>
+				<Task/>
+			</ScrollView>
+			<AddButton/>
 		</SafeAreaView>
 	);
 };

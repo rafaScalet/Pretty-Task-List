@@ -16,6 +16,14 @@ const buttons = StyleSheet.create({
 		borderRadius: 5,
 		marginLeft: 10,
 	},
+	addButton: {
+		alignItems: 'center',
+    padding: 8,
+    borderRadius: 8,
+    marginHorizontal: 24,
+		marginVertical: 24,
+    backgroundColor: '#3a8dff',
+	},
 });
 
-export const { logInButton, actionButton } = buttons;
+export const { logInButton, actionButton, addButton } = buttons;

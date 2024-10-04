@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo'
-import { Login, Home } from '@screens'
+import { Login, Home, AddTask } from '@screens'
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
@@ -10,9 +10,10 @@ export default function App() {
 
 	return (
 		<NavigationContainer>
-			<Drawer.Navigator initialRouteName='Home'>
-				<Drawer.Screen name='Login' component={Login}/>
+			<Drawer.Navigator initialRouteName='Log-Out'>
 				<Drawer.Screen name='Home' component={Home}/>
+				<Drawer.Screen name='Add Task' component={AddTask}/>
+				<Drawer.Screen name='Log-Out' component={Login} options={{headerShown: false}}/>
 			</Drawer.Navigator>
 		</NavigationContainer>
   );
