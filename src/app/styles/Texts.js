@@ -9,6 +9,15 @@ const texts = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
   },
+	taskTitle: {
+		marginRight: 8,
+		fontWeight: 'bold',
+		fontSize: 16,
+	},
+	dueDateText: {
+		color: '#777',
+		marginRight: 'auto',
+	},
 });
 
-export const { textButton, title } = texts;
+export const { taskTitle, textButton, title, dueDateText } = texts;

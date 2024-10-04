@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native'
 
 const inputs = StyleSheet.create({
-	default: {
+	input: {
 		height: 40,
 		margin: 12,
 		borderWidth: 1,
@@ -10,4 +10,4 @@ const inputs = StyleSheet.create({
 	},
 });
 
-export const input = inputs.default;
+export const input = inputs.input;
