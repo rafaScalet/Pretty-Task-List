@@ -1,13 +1,24 @@
 import { AddButton, Task } from '@components'
-import { SafeAreaView, ScrollView } from 'react-native';
+import { FlatList, SafeAreaView, ScrollView } from 'react-native';
+import { getAllTasks } from '@functions'
+import { useEffect, useState } from 'react';
 
 export function Home ({ navigation }) {
+	const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+		getAllTasks().then((data) => {
+			setTasks(data);
+			console.log(data);
+		});
+  }, []);
+
 	return (
 		<SafeAreaView style={{flex: 1}}>
 			<ScrollView>
-				<Task/>
-				<Task/>
-				<Task/>
+				<FlatList data={tasks} keyExtractor={({ id }) => id.toString()} renderItem={({ item }) => (
+					<Task title={item.title} dueDate={item.dueDate} isChecked={item.isChecked}/>
+				)}/>
 			</ScrollView>
 			<AddButton navigation={navigation}/>
 		</SafeAreaView>
