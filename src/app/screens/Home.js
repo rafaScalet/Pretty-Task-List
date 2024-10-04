@@ -9,7 +9,7 @@ export function Home ({ navigation }) {
 				<Task/>
 				<Task/>
 			</ScrollView>
-			<AddButton/>
+			<AddButton navigation={navigation}/>
 		</SafeAreaView>
 	);
 };

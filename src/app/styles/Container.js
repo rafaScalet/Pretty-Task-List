@@ -24,6 +24,10 @@ const containers = StyleSheet.create({
     shadowRadius: 4,
     elevation: 5,
   },
+	addTaskContainer: {
+		flex: 1,
+		justifyContent: 'center',
+	},
 });
 
-export const { container, cardContainer } = containers;
+export const { container, cardContainer, addTaskContainer } = containers;
