@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-const containers = StyleSheet.create({
+export default containers = StyleSheet.create({
 	container: {
 		flex: 1,
 		backgroundColor: '#fff',
@@ -29,5 +29,3 @@ const containers = StyleSheet.create({
 		justifyContent: 'center',
 	},
 });
-
-export const { container, cardContainer, addTaskContainer } = containers;

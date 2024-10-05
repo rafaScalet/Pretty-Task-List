@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const texts = StyleSheet.create({
+export default texts = StyleSheet.create({
   title: {
     fontSize: 50,
     fontWeight: 'bold',
@@ -19,5 +19,3 @@ const texts = StyleSheet.create({
 		marginRight: 'auto',
 	},
 });
-
-export const { taskTitle, textButton, title, dueDateText } = texts;

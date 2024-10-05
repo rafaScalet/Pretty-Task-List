@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-const inputs = StyleSheet.create({
+export default inputs = StyleSheet.create({
 	input: {
 		margin: 12,
 		borderWidth: 1,
@@ -8,5 +8,3 @@ const inputs = StyleSheet.create({
 		borderRadius: 8,
 	},
 });
-
-export const input = inputs.input;

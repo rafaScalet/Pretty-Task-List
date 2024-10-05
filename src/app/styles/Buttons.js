@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const buttons = StyleSheet.create({
+export default buttons = StyleSheet.create({
 	logInButton: {
 		borderRadius: 50,
     backgroundColor: '#a91101',
@@ -26,4 +26,4 @@ const buttons = StyleSheet.create({
 	},
 });
 
-export const { logInButton, actionButton, addButton } = buttons;
+// export const { logInButton, actionButton, addButton } = buttons;
