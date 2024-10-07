@@ -4,8 +4,9 @@ import Checkbox from 'expo-checkbox';
 import { useState } from 'react';
 import { Image, Pressable, Text, View } from 'react-native'
 
-export function Task ({ title, dueDate, isChecked, id }) {
+export function Task ({ title, dueDate, isChecked, id, navigation }) {
 	const [isDone, setIsDone] = useState(isChecked);
+	const data = {}
 
 	return (
 		<View style={cardContainer}>
@@ -15,7 +16,7 @@ export function Task ({ title, dueDate, isChecked, id }) {
 			<Pressable style={[actionButton, {backgroundColor: '#e65a49'}]} onPress={() => deleteTask(id)}>
 				<Image source={require('@app/assets/delete.svg')}/>
 			</Pressable>
-			<Pressable style={[actionButton, {backgroundColor: '#7fbf2a'}]}>
+			<Pressable style={[actionButton, {backgroundColor: '#7fbf2a'}]} onPress={() => navigation.navigate('editar', { id: id})}>
 				<Image source={require('@app/assets/edit.svg')}/>
 			</Pressable>
 		</View>
