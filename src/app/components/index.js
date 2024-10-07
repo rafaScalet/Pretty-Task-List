@@ -1,3 +1,4 @@
 export { Task } from './Task';
-export { AddButton } from './AddButton';
+export { NavButton } from './navButton';
 export { FormTask } from './FormTask'
+export { AddButton } from './addButton'

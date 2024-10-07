@@ -1,4 +1,4 @@
-import { AddButton, Task } from '@components'
+import { NavButton, Task } from '@components'
 import { FlatList, SafeAreaView, ScrollView } from 'react-native';
 import { getAllTasks } from '@functions'
 import { useEffect, useState } from 'react';
@@ -20,7 +20,7 @@ export function Home ({ navigation }) {
 					<Task title={item.title} dueDate={item.dueDate} isChecked={item.isChecked}/>
 				)}/>
 			</ScrollView>
-			<AddButton navigation={navigation}/>
+			<NavButton navigation={navigation} screen={'Add-Task'}/>
 		</SafeAreaView>
 	);
 };

@@ -1,4 +1,4 @@
-import { FormTask, AddButton } from '@components';
+import { AddButton, FormTask } from '@components';
 import { addTaskContainer } from '@styles';
 import { SafeAreaView } from 'react-native';
 
