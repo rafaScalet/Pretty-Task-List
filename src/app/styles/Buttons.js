@@ -20,7 +20,7 @@ export default buttons = StyleSheet.create({
 		alignItems: 'center',
     padding: 8,
     borderRadius: 8,
-    marginHorizontal: 24,
+    marginHorizontal: 12,
 		marginVertical: 24,
     backgroundColor: '#3a8dff',
 	},
