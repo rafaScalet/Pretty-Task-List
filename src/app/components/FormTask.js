@@ -8,12 +8,14 @@ export function FormTask () {
 	const [dueDate, setDueDate] = useState('');
 	const [description, setDescription] = useState('');
 
+	const data = {title, dueDate, description};
+
 	return (
 		<View style={{marginHorizontal: 12}}>
 			<TextInput placeholder='Title of the task' style={input} value={title} onChangeText={text => setTitle(text)}/>
 			<TextInput placeholder='Final date of the task' style={input} value={dueDate} onChangeText={text => setDueDate(text)}/>
 			<TextInput placeholder='Description of the task' style={input} value={description} onChangeText={text => setDescription(text)} numberOfLines={5} multiline/>
-			<AddButton/>
+			<AddButton data={data}/>
 		</View>
 	);
 };
