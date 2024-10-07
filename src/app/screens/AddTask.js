@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native';
 export function AddTask ({ navigation }) {
 	return (
 		<SafeAreaView style={addTaskContainer}>
-			<FormTask/>
+			<FormTask navigation={navigation}/>
 		</SafeAreaView>
 	);
 };
