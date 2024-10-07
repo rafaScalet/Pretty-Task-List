@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { AddButton } from './addButton';
 
 export function FormTask () {
-	const [title, setTitle] = useState('');
-	const [dueDate, setDueDate] = useState('');
-	const [description, setDescription] = useState('');
+	const [title, setTitle] = useState('title');
+	const [dueDate, setDueDate] = useState('10/10');
+	const [description, setDescription] = useState('description');
 
 	const data = {title, dueDate, description};
 

@@ -17,7 +17,7 @@ export function Home ({ navigation }) {
 		<SafeAreaView style={{flex: 1}}>
 			<ScrollView>
 				<FlatList data={tasks} keyExtractor={({ id }) => id.toString()} renderItem={({ item }) => (
-					<Task title={item.title} dueDate={item.dueDate} isChecked={item.isChecked}/>
+					<Task title={item.title} dueDate={item.dueDate} isChecked={item.isChecked} id={item.id}/>
 				)}/>
 			</ScrollView>
 			<NavButton navigation={navigation} screen={'Add-Task'}/>
